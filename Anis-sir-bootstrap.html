@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- the above 3 meta tag must comes first  -->
+
+    <title>Bootstrap with Anisul Islam sir</title>
+
+    <link rel="stylesheet" href="css.css">
+    
+    <!-- Font awesome cdn start  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- bootstrap link  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <style>
+        .header{
+            font-size: 40px;
+        }
+        .ul-list li:hover{
+            background-color: black;
+            text-align: center;
+        }
+        
+        .feedback{        
+            background: #0d0442;
+            padding: 10% 10%;
+        }
+        hr.hr-style{
+            border: 10px dotted white;
+            border-bottom: none;
+            
+        }
+        .carousel-inner{
+            padding: 5% 15%;
+            text-align: center;
+        }
+        
+        .img-car{
+            width: 120px;
+            height: auto;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+    
+        <header>
+            <div>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <img style="width: 100px;" src="nav-img.png" alt="">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                        <ul class="navbar-nav ml-auto">
+                        <li class="nav-item "> <a class="nav-link text-white" href="#">Home</a></li>
+                        <li class="nav-item "> <a class="nav-link text-white" href="#services">Services</a></li>
+                        <li class="nav-item"> <a class="nav-link text-white" href="#about-me">About Me</a></li>
+                        <li class="nav-item"> <a class="nav-link text-white" href="#customer-review">Customer Review</a></li>
+                        <li class="nav-item"> <a class="nav-link text-white" href="#">Contact</a></li>
+                        </ul>
+                        
+                        <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+                
+                  
+
+            <!-- End of Navbar  -->
+
+            <!-- dynamic nav -->
+            <div>
+
+                <ul class="nav nav-tabs">
+                    <li class="nav-item"> <a data-toggle="tab" class="nav-link" href="#skill">skill</a></li>
+                    <li class="nav-item"> <a data-toggle="tab" class="nav-link" href="#hobby">hobby</a></li>
+                    <li class="nav-item"> <a data-toggle="tab" class="nav-link" href="#prayer">prayer</a></li>
+                </ul>
+
+                <div class="tab-content text-center"> 
+                    <div id="skill" class="tab-pane active" ><p> 123  dfjasdlkf alkjd fasldkjfadfj adf The lorem ipsum is a placeholder text used in publishing and graphic design. This filler text is a short paragraph that contains all the letters of the alphabet. The characters are spread out evenly so that the reader's attention is focused on the layout of the text instead of its content.</p></div>
+                    <div id="hobby" class="tab-pane fade"><p> 231 jasdlkfjalsdfdsfj asdfj;ldjfsdfjasdf  fa dfj;djf a kdfd ffd jfkdjf;ldfjsdf sdhoiwwoheoalnfowienc o ancaeawih foicasn ihre ughrn sdfndf sdhf hfnf afhfhohfsdnfkljsdngeriufb afsndf udh urewfasdbjfn sdfjknasdjcniubewriu bc ascnasidnpbfwaiueb fwbecbnskjncas iu eiut.</p></div>
+                    <div id="prayer" class="tab-pane fade"><p> 321 The lorem ipsum is a placeholder text used in publishing and graphic design. This filler text is a short paragraph that contains all the letters of the alphabet. The characters are spread out evenly so that the reader's attention is focused on the layout of the text instead of its content.</p></div>
+                </div>
+            </div>
+
+            <!-- End of dynamic nav -->
+        </header>
+        
+        <main >
+            <!-- service section  -->
+            <div class="mt-5">
+                
+                <div id="services" class="title text-center">
+                    <h1 style="text-decoration: underline;">Services</h1>
+                    
+                </div>
+
+                <div class="row text-center">
+                             
+                    <div class="col-lg-3 col-md-6">
+                        <i class="far fa-handshake fa-3x"></i>
+                        <h3  class="bg-dark text-white rounded text-center py-2"> Web Designing</h3>
+                        <p class="jumbotron">
+                            The lorem ipsum is a placeholder text used in publishing and graphic design. This filler text is a short paragraph that contains all the letters of the alphabet. The characters are spread out evenly so that the reader's attention is focused on the layout of the text instead of its content.
+                        </p>
+                    </div>
+                
+                
+                    <div class="col-lg-3 col-md-6">
+                        <i class="far fa-handshake fa-3x"></i>
+                        <h3 class="bg-dark text-white  rounded text-center py-2"> Web Designing</h3>
+                        <p class="jumbotron">
+                            The lorem ipsum is a placeholder text used in publishing and graphic design. This filler text is a short paragraph that contains all the letters of the alphabet. The characters are spread out evenly so that the reader's attention is focused on the layout of the text instead of its content.
+                        </p>
+                    </div>
+                
+                
+                    <div class="col-lg-3 col-md-6">
+                        <i class="far fa-handshake fa-3x"></i>
+                        <h3 class="bg-dark text-white rounded text-center py-2"> Web Designing</h3>
+                        <p class="jumbotron">
+                            The lorem ipsum is a placeholder text used in publishing and graphic design. This filler text is a short paragraph that contains all the letters of the alphabet. The characters are spread out evenly so that the reader's attention is focused on the layout of the text instead of its content.
+                        </p>
+                    </div>
+                
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <i class="far fa-handshake fa-3x"></i>
+                        <h3 class="bg-dark text-white rounded text-center py-2">Web Designing</h3>
+                        <p class="jumbotron">
+                            The lorem ipsum is a placeholder text used in publishing and graphic design. This filler text is a short paragraph that contains all the letters of the alphabet. The characters are spread out evenly so that the reader's attention is focused on the layout of the text instead of its content.
+                        </p>
+                    </div>
+
+                </div>
+
+                
+            </div>
+            <!-- End service section -->
+
+
+            <!-- About me -->
+            <div id="about-me" class="row jumbotron">
+                
+                <div class="text-center col-lg-4">
+                    <img src="unnamed.jpg" class="rounded-circle">
+                </div>
+
+                <div class="col-lg-8 text-center">
+                    <h2 class="mb-3">About Me</h2>
+                    <p>
+                        The lorem ipsum is a placeholder text used in publishing and graphic design. This filler text is a short paragraph that contains all the letters of the alphabet. The characters are spread out evenly so that the reader's attention is focused on the layout of the text instead of its content.
+                    </p>
+                        <div class="btn btn-group">
+                            <button class="btn btn-outline-primary  ">Download - 1</button>
+                            <button class="btn btn-outline-primary  ">Download - 2</button>
+                        </div>
+
+                        <div class="alert bg-success alert-dismissible text-white">
+                        <button class="close" data-dismiss="alert">&times;</button>
+                        Have you seen my youtube channel ? <a href="#" class="text-white">Visit my channel</a>
+                        </div>
+                
+                </div>
+
+            </div>
+            <!-- End of About me-->
+
+            <!-- customer review section  -->
+            <div class="text-center">
+
+                <div id="customer-review" class="title bg-dark text-white py-2">
+                    <h3>Customer Review </h3>
+                </div>
+    
+                <div class="row">
+
+                    
+                    <div class="col-lg-4">
+                        <i class="far fa-handshake fa-2x"></i>
+                        <h3>Review 1</h3>
+                        <blockquote class="blockquote bg-light">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi sint saepe aperiam veniam error suscipit officia laborum corrupti atque ipsa, numquam ratione deserunt repellat aut est ut recusandae id ipsam? <abbr title="World Health Organiztion">WHO</abbr></p>
+                            <footer class="blockquote-footer">Anis Sir Review - 1</footer>
+                        </blockquote>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <i class="far fa-handshake fa-2x"></i>
+                        <h3>Review 2</h3>
+                        <blockquote class="blockquote bg-light">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi sint saepe aperiam veniam error suscipit officia laborum corrupti atque ipsa, numquam ratione deserunt repellat aut est ut recusandae id ipsam? <abbr title="World Health Organiztion">WHO</abbr></p>
+                            <footer class="blockquote-footer">Anis Sir Review - 2</footer>
+                        </blockquote>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <i class="far fa-handshake fa-2x"></i>
+                        <h3>Review 3</h3>
+                        <blockquote class="blockquote bg-light">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore sunt, delectus nam totam, voluptatum eaque praesentium doloribus eos facilis quam quisquam quis optio dolore culpa magni quos sed consequatur accusantium! <abbr title="World Health Organiztion">WO</abbr></p>
+                        <footer class="blockquote-footer">Anisul sir Review - 3</footer>
+                        </blockquote>
+                    </div>
+
+                </div>
+            </div>
+            
+
+            <!-- End of customer review section -->
+
+            <!-- Card  -->
+            <div class="text-center">
+
+                <div id="cards" class="title bg-dark text-white py-2">
+                    <h3> Cards </h3>
+                </div>
+
+                <div class="row text-center">
+
+                    <div class="col-lg-3 my-2">
+                        <div class="card">
+                            <div class="card-header">Header of a card</div>
+                            <div class="card-body">
+                                <img style="width: 100px;" class="rounded-circle" src="unnamed.jpg" alt="">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut perferendis, odit qui dolorem tempore modi doloribus, aliquam corporis blanditiis ad, molestiae tempora eligendi iure illum animi nisi mollitia dicta neque.</p>
+                            </div>
+                            <div class="card-footer">Footer of a cad </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 my-2">
+                        <div class="card">
+                            <div class="card-header">Header of a card</div>
+                            <div class="card-body">
+                                <img style="width: 100px;" class="rounded-circle" src="unnamed.jpg" alt="">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut perferendis, odit qui dolorem tempore modi doloribus, aliquam corporis blanditiis ad, molestiae tempora eligendi iure illum animi nisi mollitia dicta neque.</p>
+                            </div>
+                            <div class="card-footer">Footer of a cad </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 my-2">
+                        <div class="card">
+                            <div class="card-header">Header of a card</div>
+                            <div class="card-body">
+                                <img style="width: 100px;" class="rounded-circle" src="unnamed.jpg" alt="">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut perferendis, odit qui dolorem tempore modi doloribus, aliquam corporis blanditiis ad, molestiae tempora eligendi iure illum animi nisi mollitia dicta neque.</p>
+                            </div>
+                            <div class="card-footer">Footer of a cad </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 my-2">
+                        <div class="card">
+                            <div class="card-header">Header of a card</div>
+                            <div class="card-body">
+                                <img style="width: 100px;" class="rounded-circle" src="unnamed.jpg" alt="">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut perferendis, odit qui dolorem tempore modi doloribus, aliquam corporis blanditiis ad, molestiae tempora eligendi iure illum animi nisi mollitia dicta neque.</p>
+                            </div>
+                            <div class="card-footer">Footer of a cad </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+                
+            <!-- End of Card -->
+
+            <!-- media -->
+
+            <div class="text-center">
+                <div id="media" class="title bg-dark text-white py-2">
+                    <h3> Media </h3>
+                </div>
+                
+                <div class="border">
+                    <div >
+                        <img style="width: 100px;" class="rounded-circle" src="unnamed.jpg" alt="">
+                        <h3>media - 1</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque ipsa laboriosam soluta magni, tempore aspernatur facilis vitae similique fugit dignissimos rem quo eaque. Vel ipsam, incidunt laborum quis maiores quos?</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end of media -->
+
+
+        </main>
+
+        <footer>
+
+            <!-- form start -->
+            <div id="form" class="form-section border mt-3 p-3">
+                    <div id="form" class="title bg-dark text-white py-2 text-center">
+                        <h3> Form </h3>
+                    </div>
+
+                    <form action="" class="mt-5 bg-light p-3">
+
+                        <div class="form-group">
+                            <label for="fullname">Full Name</label>
+                            <input type="text" class="form-control" name="text" id="">
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" name="email" id="">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="comment">Comment</label>
+                            <textarea name="comment" class="form-control" id="" cols="30" rows="10"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-outline-primary">Submit</button>
+                            <button type="reset" class="btn btn-outline-primary">Reset</button>
+                        </div>
+                        
+                    </form>
+            </div>
+            
+            <!-- form end -->
+
+            <!-- Feedback -->
+
+        
+                
+            <div class="feedback">
+                <div class="text-center">
+                    <h3 class="text-white">Feedback</h3>
+                    <hr class="hr-style">
+                </div>
+
+                <div>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner  text-white">
+                                   <div class="carousel-item mb-5 active">
+                                       
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate eligendi voluptates sed atque, corporis cupiditate sint repellendus alias doloribus provident soluta illo libero nam eos fugit temporibus consectetur, consequuntur facere!</p>
+                                        <img src="unnamed.jpg" class=" img-car rounded-circle" alt="">
+                                        <h5>Carousel item 1</h5>
+                                    </div>
+
+                                    <div class="carousel-item mb-5">
+                                        
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate eligendi voluptates sed atque, corporis cupiditate sint repellendus alias doloribus provident soluta illo libero nam eos fugit temporibus consectetur, consequuntur facere!</p>
+                                        <img src="unnamed.jpg" class=" img-car rounded-circle" alt="">
+                                        <h5>Carousel item 1</h5>
+                                    </div>
+
+                                    <div class="carousel-item mb-5">
+                                        
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate eligendi voluptates sed atque, corporis cupiditate sint repellendus alias doloribus provident soluta illo libero nam eos fugit temporibus consectetur, consequuntur facere!</p>
+                                        <img src="unnamed.jpg" class=" img-car rounded-circle" alt="">
+                                        <h5>Carousel item 1</h5>
+                                    </div>
+                        </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                    </div>
+                </div>
+                
+            </div>
+                
+            
+            <!-- Feedback end -->
+        </footer>
+    </div>
+
+    <div class="json-file"></div>
+    <!-- Javascript side -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    <!--End of Javascript side -->
+
+    <script src="./Data.js"></script>
+
+    
+</body>
+</html>
